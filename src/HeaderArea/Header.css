@@ -1,0 +1,47 @@
+.menu-background-conatiner {
+    background-color: #181818;
+    width: 100%;
+  }
+  
+  .menu-list {
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 35px;
+    padding-left: 0px;
+  }
+  
+  .menu-list li {
+    cursor: pointer;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+  }
+  
+  .test-one {
+    display: inline-block;
+    width: 33.3%;
+  }
+  
+  .test-two {
+    display: inline-block;
+    width: 33.3%;
+  }
+  
+  .test-two .logo-area {
+    display: none;
+  }
+  
+  .test-three {
+    display: inline-block;
+    width: 33.3%;
+  }
+
+  @media only screen and (max-width: 600px) { 
+    .menu-list {
+        display: none;
+      }
+
+      .test-two .logo-area {
+        display: inline;
+      }
+  }

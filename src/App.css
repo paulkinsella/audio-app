@@ -1,38 +1,614 @@
+html,
+body {
+  margin: 0;
+}
+
 .App {
+  width: 100%;
+  background-color: #fff;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.container {
+  margin: auto;
+  display: inline;
+  width: 80%;
+}
+
+.banner-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url("./images//image-hero.jpg");
+  width: 100%;
+  height: 800px;
+}
+
+.product-row {
+  background-color: white;
+  width: 100%;
+}
+
+.product-row-container {
+  width: 100%;
+  margin: auto;
+}
+
+.new-product-container {
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 80px;
+}
+
+.box {
+  display: inline-block;
+  width: 31.8%;
+  text-align: center;
+  margin: 10px;
+}
+
+.test-seven {
+  display: inline-block;
+  background-color: #f1f1f1;
+  width: 26.5%;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test-eight {
+  display: inline-block;
+  background-color: #f1f1f1;
+  width: 26.5%;
+  margin: 10px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-container {
+  margin-left: 10%;
+  width: 450px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-image {
+  width: 100%;
+
+  object-fit: contain;
+}
+.menu-container {
+  background-color: #181818;
   display: flex;
-  flex-direction: column;
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  border-bottom: solid #9c9696;
+  border-width: thin;
+}
+
+.menu-item {
+  display: none;
+}
+
+.logo-area {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.cart-area {
+  margin: auto;
+  display: inline-block;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.cart-image {
+  float: right;
+}
+
+.product-two-container {
+  padding-top: 130px;
+  margin-left: 50%;
+  width: 550px;
+}
+
+.product-three-container {
+  padding-top: 30px;
+  margin-left: 35px;
+  width: 550px;
+}
+
+.product-area {
+  position: relative;
+}
+
+.product-heading {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.product-content-1 {
+  margin-top: 180px;
+  font-size: 15px;
+  padding: 10px;
+  color: #9c9696;
+  text-align: left;
+}
+
+.product-content-2 {
+  font-weight: 700;
+  font-size: 65px;
+  padding: 10px;
+  color: white;
+  text-align: left;
+}
+
+.product-content-3 {
+  font-size: 24px;
+  padding: 10px;
+  color: #8c8c8c;
+  text-align: left;
+}
+
+.product-content-4 {
+  font-weight: 700;
+  font-size: 65px;
+  padding: 10px;
+  color: #000000;
+  text-align: left;
+}
+
+.product-content-white {
+  font-size: 24px;
+  padding: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+.button-container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.get-started-button {
+  background-color: #d87d44;
+  height: 50px;
+  width: 150px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.get-started-button-black {
+  background-color: black;
+  height: 50px;
+  width: 150px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.product-two-button {
+  margin-top: 50px;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.product-box {
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #fff 40%, #f1f1f1 60%);
+  width: 100%;
+  height: 300px;
+}
+
+.product-box-text {
+  padding-top: 20px;
+  font-weight: 700;
+}
+
+.productImage {
+  width: 250px;
+  height: 250px;
+}
+
+.product-row-orange {
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url("./images//background.PNG");
+  height: 565px;
+  background-color: #d87d4a;
+  margin-bottom: 10px;
+}
+
+.product-row-grey-container {
+  border-radius: 10px;
+  background: linear-gradient(to left, #a9a9a9 10%, #c3c3c3 90%);
+}
+
+.product-row-grey {
+  width: 100%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url("./images//desktop-speaker2.PNG");
+  height: 330px;
+  margin-bottom: 10px;
+}
+
+.first-grid {
+  display: inline-block;
+  height: 330px;
+  border-radius: 10px;
+  margin-left: 160px;
+  width: 40%;
+  background-image: url("./images/earphone-image.jpg");
+}
+
+.second-grid {
+  margin-left: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  height: 320px;
+  margin-right: 160px;
+  width: 40%;
+  background-color: #f1f1f1;
+}
+
+.second-grid-content {
+  color: #000000;
+  font-weight: 700;
+  font-size: 45px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.second-grid-button {
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+.footer-area {
+  height: 400px;
+  width: 100%;
+  background-color: #181818;
+}
+
+.footer-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-box-one {
+  width: 50%;
+}
+
+.footer-logo-container {
+  padding-top: 70px;
+}
+
+.footer-box-one-text-container {
+  text-align: left;
+  color: #8c8c8c;
+  margin-top: 25px;
+}
+
+.footer-box-copyright-container {
+  color: #8c8c8c;
+  margin-top: 25px;
+}
+
+.footer-box-two {
+  display: inline-block;
+  width: 50%;
+}
+
+.footer-menu-container {
+  margin-left: 260px;
+  margin-top: 50px;
+}
+
+.footer-socials-container {
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.social-image {
+  float: right;
+}
+
+/*TABLET CLASS */
+
+@media only screen and (max-width: 1600px) {
+  .product-row-orange {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images//background.PNG");
   }
-  to {
-    transform: rotate(360deg);
+
+  .box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .first-grid {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-image: url("./images/earphone-image.jpg");
+  }
+
+  .second-grid {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: #f1f1f1;
+  }
+}
+
+/*MOBILE CLASS*/
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100%;
+    font-family: sans-serif;
+    height: 100%;
+  }
+  .menu-container {
+    background-color: #181818;
+    display: flex;
+    width: 100%;
+    height: 80px;
+  }
+
+  .grid-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .grid-two {
+    background-color: #fff;
+    margin: auto;
+  }
+
+  .first-grid {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-image: url("./images/earphone-image.jpg");
+  }
+
+  .second-grid {
+    float: none;
+    display: block;
+    margin: auto;
+    width: 90%;
+    background-color: #f1f1f1;
+  }
+
+  .product-row-grey-container {
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(to left, #a9a9a9 10%, #c3c3c3 90%);
+  }
+
+  .product-row-grey {
+    width: 100%;
+    border-radius: 10px;
+    background-image: none;
+    height: 339px;
+    margin-bottom: 10px;
+  }
+
+  .product-row-orange {
+    background-size: cover;
+    margin: auto;
+    width: 90%;
+    height: 714px;
+    background-image: url("./images//speaker-mobile.PNG");
+    margin-bottom: 10px;
+  }
+
+  .product-two-container {
+    padding-top: 200px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-three-container {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu-item {
+    display: inline-block;
+    width: 33.3%;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .new-product-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-container {
+    margin: auto;
+    width: 100%;
+  }
+
+  .product-content-white {
+    font-size: 24px;
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .product-content-white {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .box {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .test-one {
+    width: 33.3%;
+  }
+
+  .test-one .logo-area {
+    display: none;
+  }
+
+  .test-two {
+    width: 33.3%;
+  }
+
+  .test-two .logo-area {
+    display: inline;
+  }
+
+  .logo-area {
+    margin-top: 35px;
+  }
+
+  .test-three {
+    width: 33.3%;
+  }
+
+  .banner-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./images//header.jpg");
+    width: 100%;
+    text-align: center;
+    height: 700px;
+  }
+
+  .product-content-1 {
+    margin-top: 180px;
+    font-size: 15px;
+    padding: 10px;
+    color: #8c8c8c;
+    text-align: center;
+  }
+
+  .product-content-2 {
+    font-size: 48px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .product-content-3 {
+    font-size: 18px;
+    padding: 10px;
+    color: #8c8c8c;
+    text-align: center;
+  }
+
+  .breaker {
+    display: none;
+  }
+
+  .logo-image {
+    margin-top: 35px;
+  }
+
+  .product-box {
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff 40%, #f1f1f1 60%);
+    width: 90%;
+    height: 300px;
   }
 }
