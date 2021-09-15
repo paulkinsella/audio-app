@@ -21,7 +21,9 @@ const HomePage = () => {
           </div>
           <br /> <br />
           <div className="button-container">
-            <button className="get-started-button">SEE PRODUCT</button>
+            <button className="get-started-button">
+              <a href="/headphones">SEE PRODUCT</a>
+            </button>
           </div>
         </div>
       </div>

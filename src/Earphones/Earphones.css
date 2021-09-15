@@ -3,7 +3,46 @@
 }
 
 .content-coontainer {
+  padding-top: 50px;
   width: 80%;
   margin: auto;
   height: 1000px;
+}
+
+.image-box {
+  display: inline-block;
+  background-color: red;
+  width: 50%;
+}
+
+.text-box {
+  display: inline-block;
+  background-color: green;
+  width: 50%;
+}
+
+.earphones-product-container {
+  padding-top: 50px;
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-coontainer {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    height: 1000px;
+  }
+  .image-box {
+    display: inline-block;
+    background-color: red;
+    width: 100%;
+  }
+
+  .text-box {
+    display: inline-block;
+    background-color: green;
+    width: 100%;
+  }
 }
