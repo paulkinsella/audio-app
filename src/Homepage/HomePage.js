@@ -1,6 +1,6 @@
 import '../App.css';
-import { getProducts } from '../Constants';
-import Footer from '../Footer';
+import { getProducts } from '../Products/Products';
+import Footer from '../Footer/Footer';
 import Header from '../HeaderArea/Header';
 
 const HomePage = () => {
