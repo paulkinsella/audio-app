@@ -10,6 +10,11 @@ body {
   height: 100%;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   margin: auto;
   display: inline;
@@ -315,6 +320,8 @@ body {
   border-radius: 10px;
   margin-left: 160px;
   width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("./images/earphone-image.jpg");
 }
 
@@ -394,6 +401,11 @@ body {
 /*TABLET CLASS */
 
 @media only screen and (max-width: 1600px) {
+  .App {
+    width: 100%;
+    font-family: sans-serif;
+    height: 100%;
+  }
   .product-row-orange {
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -454,6 +466,8 @@ body {
     display: block;
     margin: auto;
     width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("./images/earphone-image.jpg");
   }
 

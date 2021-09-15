@@ -13,11 +13,11 @@ const Sidebar = props => {
         HEADPHONES
       </a>
 
-      <a className="menu-item" href="/pizzas">
+      <a className="menu-item" href="/speakers">
         SPEAKERS
       </a>
 
-      <a className="menu-item" href="/desserts">
+      <a className="menu-item" href="/earphones">
         EARPHONES
       </a>
 
