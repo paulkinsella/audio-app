@@ -1,7 +1,7 @@
-import './App.css';
-import Logo from './Logo.js';
-import Menu from './Menu/Menu';
-import socials from './images/socials.PNG';
+import '../App.css';
+import Logo from '../SVG/Logo.js';
+import Menu from '../Menu/Menu';
+import socials from '../images/socials.PNG';
 
 const Footer = () => {
 

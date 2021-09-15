@@ -1,6 +1,6 @@
 import './Earphones.css';
 import Header from '../HeaderArea/Header';
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 
 const Earphones = () => {
 
@@ -8,7 +8,7 @@ const Earphones = () => {
     <div className="earphones-container">
       <Header />
       <div className="content-coontainer">
-        HEADPHONES Content Goes Here!!!
+        EARPHONES Content Goes Here!!!
       </div>
       <Footer />
     </div>

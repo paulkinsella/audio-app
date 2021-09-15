@@ -1,6 +1,6 @@
 import './Headphones.css';
 import Header from '../HeaderArea/Header';
-import Footer from '../Footer';
+import Footer from '../Footer/Footer';
 
 const Headphones = () => {
 

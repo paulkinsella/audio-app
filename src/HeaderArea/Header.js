@@ -1,6 +1,6 @@
 import SideBar from "../Sidebar/sidebar";
-import CartIcon from '../CartIcon';
-import Logo from '../Logo.js';
+import CartIcon from '../SVG/CartIcon';
+import Logo from '../SVG/Logo.js';
 import Menu from '../Menu/Menu';
 import './Header.css';
 
@@ -10,7 +10,9 @@ const Header = () => {
     <div className="menu-background-conatiner">
       <div className="menu-container">
         <div className="test-one">
-          <div className='logo-area'><Logo /></div>
+          <div className='logo-area'>
+            <Logo />
+          </div>
           <div className="menu-item">
             <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
           </div>

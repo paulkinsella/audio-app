@@ -1,12 +1,12 @@
-import productImage from './images/productImage.png';
-import speaker from './images/speaker.png';
-import earphones from './images/earphones.png';
+import productImage from '../images/productImage.png';
+import speaker from '../images/speaker.png';
+import earphones from '../images/earphones.png';
 
 const HEADPHONES = 'HEADPHONES';
 const SPEAKERS = 'SPEAKERS';
 const EARPHONES = 'EARPHONES';
 
-export const Products = [
+const Products = [
   {
     'text': HEADPHONES,
     'image': productImage
@@ -27,9 +27,8 @@ export const getProducts = () => {
         <div className="product-image-box">
           <img className="productImage" src={item.image} alt="products" />
         </div>
-        <div className="product-box-text">{item.text}</div><
-          /div>
-      </div>
+        <div className="product-box-text">{item.text}</div></div>
+    </div>
 
-      ));
+  ));
 };;
